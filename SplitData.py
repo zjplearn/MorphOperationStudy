@@ -16,7 +16,7 @@ def getTrainTest(trainPercent):
     :return: trainX: shape=(tarinNum, 1, 9, 9, B//3) trainY: shape=(trainNum,1),
             testX: shape=(testNum, 1, 9, 9, B//3) testY: shape=(testNum,1),
     """
-    rawData = scipy.io.loadmat("DataSet/Indian_pines/Indian_pines.mat")["Indian_pines"]
+    rawData = scipy.io.loadmat("DataSet/Indian_pines/Indian_pines.mat")["Indian_pines_corrected"]
     # rawData = scipy.io.loadmat("DataSet/Indian_Pines/Indian_Pines.mat")
     # print(rawData)
     groundTruth = scipy.io.loadmat("DataSet/Indian_pines/Indian_pines_gt.mat")["Indian_pines_gt"]
